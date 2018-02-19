@@ -1,5 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p>This is a default 500 error template.</p>
+<!-- <p>This is a default 500 error template.</p> -->
+<title>
+	500 Error Message
+</title>
+<body>
+	<form method = "" action="http://localhost:5000/500">
+	Oh no! Our server does not feel too great, so the page is currently unavailable. 
+	<!-- Click <a href="http://localhost:5000">here</a> to go home.  -->
+	Want to see the form again? <a href="http://localhost:5000">Here</a> it is!
+</form> 
+</body>
 {% endblock %}

@@ -224,7 +224,7 @@ def see_all_tweets():
 def see_all_users():
     # TODO 364: Fill in this view function so it can successfully render the template all_users.html, which is provided.
     all_users_query = User.query.all()
-    return render_template("all_users.html", users = all_users_query)
+    return render_template('all_users.html', users = all_users_query)
 
 
 # TODO 364
@@ -244,7 +244,7 @@ def get_longest_tweet():
     the_longest_tweet = "{} posted by {} ({})".format(sorted_list_of_tweet_tuples[0][0], sorted_list_of_tweet_tuples[0][1], sorted_list_of_tweet_tuples[0][2])
     tweet_text = the_longest_tweet
 
-    return render_template("longest_tweet.html", tweet = tweet_text)
+    return render_template('longest_tweet.html', tweet = tweet_text)
 
 # NOTE:
 # This view function should compute and render a template (as shown in the sample application) that shows the text of the tweet currently saved in the database which has the most NON-WHITESPACE characters in it, and the username AND display name of the user that it belongs to.

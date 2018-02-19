@@ -212,7 +212,6 @@ def see_all_tweets():
     # HINT #2: You'll have to make a query for the tweet and, based on that, another query for the username that goes with it...
     the_tweets = []
     all_tweets_query = Tweet.query.all()
-    print(all_tweets_query)
     for a_tweet in all_tweets_query:
         user = User.query.filter_by(userId = a_tweet.user_id).first()
         tweets_and_users = (a_tweet.tweetText,user.username)
